@@ -1,0 +1,30 @@
+#first
+{
+	height: 50%;
+	width:100%;
+
+}
+
+#second, #third, #fourth
+{
+	height: 420px;
+	width:100%;
+	display:block;
+	
+}
+
+.figure
+{
+	height:100%;
+	width:75%;
+	float: left;
+	
+}
+
+.results
+{
+	height:100%;
+	width:25%;
+	float:right;
+	
+}
