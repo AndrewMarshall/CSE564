@@ -171,7 +171,7 @@ function calculate() {
 		pixelConversion = 3456;
 
 	var scale = input*pixelConversion // convert to pixels
-	scale = scale/300                 // divide by the fixed pixel scaler in the draw cube function
+	scale = scale/300                 // divide by the actual width in pixels of the cube
 	scale = scale/12                  // divide by the number of edges of a cube
 	var scale = Math.round(scale*100)/100;
 
