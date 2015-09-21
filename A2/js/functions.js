@@ -170,7 +170,10 @@ function calculate() {
 	if (unit == 'yards')
 		pixelConversion = 3456;
 
-	var scale = Math.round(input/10*pixelConversion)/100;
+	var scale = input*pixelConversion // convert to pixels
+	scale = scale/300                 // divide by the width of the drawn cube in pixels
+	var scale = Math.round(scale*100)/100;
+
 	$('#ratio').append('<hr />');
 	$('#ratio').append('<h3>Scale: 1 : ' + scale + '</h3>');
 	$('#ratio').append('<hr />');
