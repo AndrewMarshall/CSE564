@@ -28,7 +28,8 @@
 			<input type="radio" name="unit" value="cm" > Cm 
 			<input  type="radio" name="unit" value="meter" > Meter 
 			</div>
-			<br><br><input type="button" value="Generate" onclick="calculate();">	
+			<br>
+			<input hidden id="generate" type="button" value="Generate" onclick="calculate();">	
 				
 		</center>
 
@@ -73,17 +74,20 @@
 		{
 			$('#met').hide();
 			$('#am').show();
+			$('#generate').show();
 		}
 
 		else if($('#selection').val()=='metric')
 		{
 			$('#met').show();
 			$('#am').hide();
+			$('#generate').show();
 		}
 		else
 		{
 			$('#met').hide();
 			$('#am').hide();
+			$('#generate').hide();
 		}
 	});
 
